@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <nav class="p-4 bg-gray-800 text-white flex gap-4">
+      <nav className="p-4 bg-gray-800 text-white flex gap-4">
 
       </nav>
       <h1 className="text-3xl font-bold underline">Hello!</h1>
