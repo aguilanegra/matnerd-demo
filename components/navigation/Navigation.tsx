@@ -12,7 +12,7 @@ function Navigation() {
 
     const navLinks: NavLink[] = [
         { to: '/', label: 'Home' },
-        // { to: '/repositories', label: 'Repositories' },
+        { to: '/repositories', label: 'Repositories' },
         { to: '/about', label: 'About' },
     ];
 
