@@ -203,19 +203,6 @@ export const useUnstarRepository = () => {
     };
 };
 
-// export const useUserProfile = () => {
-//     return useQuery({
-//         queryKey: ['user', USERNAME],
-//         queryFn: async () => {
-//             const response = await fetch(`${GITHUB_API_URL}/users/${USERNAME}`);
-//             if (!response.ok) {
-//                 throw new Error('Failed to fetch user profile');
-//             }
-//             return response.json();
-//         }
-//     });
-// };
-
 export const useUserProfile = () => {
     return useQuery({
         queryKey: ['user', USERNAME],

@@ -56,21 +56,21 @@ const HomePage = () => {
             </section>
 
             <section className="py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-                {/*<div className="bg-white p-6 rounded-lg shadow-md">*/}
-                {/*    <div className="mb-4 text-blue-600">*/}
-                {/*        /!*<Code size={32} />*!/*/}
-                {/*    </div>*/}
-                {/*    <h2 className="text-xl font-semibold mb-2">Browse Repositories</h2>*/}
-                {/*    <p className="text-gray-600 mb-4">*/}
-                {/*        Explore all public repositories with detailed information and statistics.*/}
-                {/*    </p>*/}
-                {/*    <Link*/}
-                {/*        to="/repositories"*/}
-                {/*        className="text-blue-600 hover:text-blue-800 font-medium"*/}
-                {/*    >*/}
-                {/*        Browse now →*/}
-                {/*    </Link>*/}
-                {/*</div>*/}
+                <div className="bg-white p-6 rounded-lg shadow-md text-black">
+                    <div className="mb-4 text-blue-600">
+                        {/*<Code size={32} />*/}
+                    </div>
+                    <h2 className="text-xl font-semibold mb-2">Browse Public Repositories</h2>
+                    <p className="text-gray-600 mb-4">
+                        Explore all public repositories with detailed information and statistics.
+                    </p>
+                    <Link
+                        to="/repositories"
+                        className="text-blue-600 hover:text-blue-800 font-medium"
+                    >
+                        Browse now →
+                    </Link>
+                </div>
 
                 {/*<div className="bg-white p-6 rounded-lg shadow-md text-black">*/}
                 {/*    <div className="mb-4 text-blue-600">*/}
