@@ -2,12 +2,16 @@ import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 // import { Star, GitFork, Eye, Calendar, Search, Code } from 'lucide-react';
-import { useRepositories } from '../services/api';
+import { useRepositories, type Repository } from '../services/api';
 import Loading from '../components/common/Loading';
 import ErrorMessage from '../components/common/ErrorMessage';
 
 const RepositoriesPage = () => {
-    const { data: repositories, isLoading, error } = useRepositories();
+    const { data: repositories, isLoading, error } = useRepositories() as {
+        data: Repository[];
+        isLoading: boolean;
+        error: any;
+    };
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null);
     const [sortBy, setSortBy] = useState<'stars' | 'updated' | 'name'>('updated');
